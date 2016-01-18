@@ -4,7 +4,7 @@
 #
 
 # 7.1. docker
-yum -y install docker
+curl -sSL https://get.docker.com/ | sh
 find / -xdev -group cgred -exec chgrp 150 {} \;
 find / -xdev -group docker -exec chgrp 151 {} \;
 groupmod -g 150 cgred

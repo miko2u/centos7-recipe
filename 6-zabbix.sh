@@ -12,6 +12,7 @@ find / -xdev -group zabbix -exec chgrp 116 {} \;
 find / -xdev -user zabbix -exec chown 116 {} \;
 groupmod -g 116 zabbix
 usermod -u 116 zabbix
+chown zabbix:zabbix /run/zabbix
 etckeeper commit -m "SETUP zabbix"
 
 # 6.2. zabbix-config
