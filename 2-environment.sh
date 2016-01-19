@@ -34,8 +34,8 @@ chronyc sources
 etckeeper commit 'SETUP chrony'
 
 # 2.5. uidgid
-systemctl stop polkit
-find / -xdev -group polkitd -exec chgrp 987 {} \;
-find / -xdev -user polkitd -exec chown 987 {} \;
-groupmod -g 987 polkitd
-usermod -u 987 polkitd
+# systemctl stop polkit
+# find / -xdev -group polkitd -exec chgrp 987 {} \;
+# find / -xdev -user polkitd -exec chown 987 {} \;
+# groupmod -g 987 polkitd
+# usermod -u 987 polkitd
